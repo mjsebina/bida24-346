@@ -10,6 +10,9 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header styles */
@@ -37,10 +40,26 @@ nav a:hover {
 /* Main content styles */
 main {
   padding: 20px;
+  flex-grow: 1;
 }
 
 /* Banner section */
-.banner
-::contentReference[oaicite:0]{index=0}
- 
+.banner {
+  text-align: center;
+}
 
+.banner img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
