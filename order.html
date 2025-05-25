@@ -1,1 +1,45 @@
-hjfthj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJ BURGER N FRIES - Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>MJ BURGER N FRIES</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="order">
+      <h2>Place Your Order</h2>
+      <form action="#" method="post">
+        <label for="burger">Select Burger:</label>
+        <select id="burger" name="burger" required>
+          <option value="cheeseburger">Cheeseburger</option>
+          <option value="bacon_burger">Bacon Burger</option>
+          <option value="veggie_burger">Veggie Burger</option>
+        </select>
+        <label for="fries">Select Fries:</label>
+        <select id="fries" name="fries" required>
+          <option value="regular">Regular</option>
+          <option value="curly">Curly</option>
+          <option value="sweet_potato">Sweet Potato</option>
+        </select>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        <button type="submit">Order Now</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 MJ BURGER N FRIES</p>
+  </footer>
+</body>
+</html>
